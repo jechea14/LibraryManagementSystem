@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net" modified="2024-03-19T04:29:52.955Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:123.0) Gecko/20100101 Firefox/123.0" etag="Cp-H_nFe8PxkcQxGwPbm" version="24.0.7" type="device">
+  <diagram name="Page-1" id="mU106YHRthELPXZ_HRkI">
+    <mxGraphModel dx="1656" dy="2195" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-7" value="Book" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="920" width="370" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-8" value="&lt;div&gt;- name: string&lt;/div&gt;&lt;div&gt;- author: string&lt;/div&gt;&lt;div&gt;- year: int&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nLnGJf4WhMFOoTpkuaUO-7">
+          <mxGeometry y="26" width="370" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="nLnGJf4WhMFOoTpkuaUO-7">
+          <mxGeometry y="100" width="370" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-10" value="&lt;div&gt;+ Book(name:string, author:string, year:int)&lt;/div&gt;&lt;div&gt;+ getName(): void&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getAuthor(): void&lt;/div&gt;&lt;div&gt;+ getYear(): void&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nLnGJf4WhMFOoTpkuaUO-7">
+          <mxGeometry y="108" width="370" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-15" value="Library" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="-60" width="250" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-16" value="&lt;div&gt;- name: string&lt;/div&gt;&lt;div&gt;- capacity: int&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nLnGJf4WhMFOoTpkuaUO-15">
+          <mxGeometry y="26" width="250" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="nLnGJf4WhMFOoTpkuaUO-15">
+          <mxGeometry y="70" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-18" value="&lt;div&gt;+ Library(name:string,capacity:int)&lt;/div&gt;&lt;div&gt;+ getName(): string&lt;/div&gt;&lt;div&gt;+ getCapacity(): int&lt;/div&gt;&lt;div&gt;+ howMuchSpaceLeft(): int&lt;/div&gt;&lt;div&gt;+ addToLibrary(item:T): void&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ method(type): type&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nLnGJf4WhMFOoTpkuaUO-15">
+          <mxGeometry y="78" width="250" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-19" value="BookShelf implements IShelf&amp;lt;Book&amp;gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="600" width="270" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-20" value="&lt;div&gt;- name: string&lt;/div&gt;&lt;div&gt;- capacity: int&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nLnGJf4WhMFOoTpkuaUO-19">
+          <mxGeometry y="26" width="270" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-21" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="nLnGJf4WhMFOoTpkuaUO-19">
+          <mxGeometry y="70" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-22" value="&lt;div&gt;+ BookShelf(name:string, capacity:int)&lt;/div&gt;&lt;div&gt;+ add(Book): void&lt;/div&gt;&lt;div&gt;+ remove(Book): void&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nLnGJf4WhMFOoTpkuaUO-19">
+          <mxGeometry y="78" width="270" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-27" value="IShelf&amp;lt;T&amp;gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="350" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-28" value="&lt;div&gt;+ getCapacity: int&lt;/div&gt;&lt;div&gt;+ add(T item): T&lt;/div&gt;&lt;div&gt;+ remove(T item): T&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nLnGJf4WhMFOoTpkuaUO-27">
+          <mxGeometry y="26" width="140" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-31" value="DVD" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="920" width="370" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-32" value="&lt;div&gt;- name: string&lt;/div&gt;&lt;div&gt;- artist: string&lt;/div&gt;&lt;div&gt;- year: int&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nLnGJf4WhMFOoTpkuaUO-31">
+          <mxGeometry y="26" width="370" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-33" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="nLnGJf4WhMFOoTpkuaUO-31">
+          <mxGeometry y="100" width="370" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-34" value="&lt;div&gt;+ DVD(name:string, artist:string, year:int)&lt;/div&gt;&lt;div&gt;+ getName(): void&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getArtist(): void&lt;/div&gt;&lt;div&gt;+ getYear(): void&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nLnGJf4WhMFOoTpkuaUO-31">
+          <mxGeometry y="108" width="370" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-35" value="DVDShelf implements IShelf&amp;lt;DVD&amp;gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="600" width="270" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-36" value="&lt;div&gt;- name: string&lt;/div&gt;&lt;div&gt;- capacity: int&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nLnGJf4WhMFOoTpkuaUO-35">
+          <mxGeometry y="26" width="270" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-37" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="nLnGJf4WhMFOoTpkuaUO-35">
+          <mxGeometry y="70" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="nLnGJf4WhMFOoTpkuaUO-38" value="&lt;div&gt;+ DVDShelf(name:string, capacity:int)&lt;/div&gt;&lt;div&gt;+ add(Book): void&lt;/div&gt;&lt;div&gt;+ remove(Book): void&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nLnGJf4WhMFOoTpkuaUO-35">
+          <mxGeometry y="78" width="270" height="82" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
