@@ -22,4 +22,8 @@ public class Book {
     public int getYear() {
         return year;
     }
+
+    public String toString() {
+        return this.name + " (" + this.year + ") by " + this.author;
+    }
 }

@@ -22,4 +22,8 @@ public class DVD {
     public int getYear() {
         return this.year;
     }
+
+    public String toString() {
+        return this.name + " (" + this.year + ") by " + this.artist;
+    }
 }
