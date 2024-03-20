@@ -19,12 +19,12 @@ public class DVDshelf implements IShelf<DVD> {
     }
 
     @Override
-    public void addItem(DVD item) {
+    public void add(DVD item) {
         dvds.add((DVD) item);
     }
 
     @Override
-    public void removeItem(DVD item) {
+    public void remove(DVD item) {
         for (DVD dvd : dvds) {
             if (dvd.getName().equals(item.getName())) {
                 dvds.remove(item);

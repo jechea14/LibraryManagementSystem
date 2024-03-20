@@ -19,12 +19,12 @@ public class Bookshelf implements IShelf<Book> {
     }
 
     @Override
-    public void addItem(Book item) {
+    public void add(Book item) {
         books.add(item);
     }
 
     @Override
-    public void removeItem(Book item) {
+    public void remove(Book item) {
         for (Book book : books) {
             if (book.getName().equals(item.getName())) {
                 books.remove(item);
@@ -33,6 +33,7 @@ public class Bookshelf implements IShelf<Book> {
     }
 
     public void printBookshelf() {
+        System.out.println(this.name + ":");
         for (Book book : books) {
             System.out.println(book.toString());
         }
